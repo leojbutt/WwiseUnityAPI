@@ -4,12 +4,14 @@ using UnityEngine;
 
 public class PlayStart : MonoBehaviour
 {
+
     public string wwiseEvent;
-    public GameObject emitter;
+    public GameObject location;
     
     //Input audio event name and GameObject the audio will emit from
+    //Audio will play on Start
     private void Start()
     {
-        AkSoundEngine.PostEvent(wwiseEvent, emitter);
+        AkSoundEngine.PostEvent(wwiseEvent, location);
     }
 }
